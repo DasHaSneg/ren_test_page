@@ -1,0 +1,17 @@
+{
+  "connect_wallet": "Connect Wallet",
+  "tab1": "Mint",
+  "tab2": "Burn",
+  "mint": {
+    "recipient_address_hint": "Recipient (testnet Ethereum address)",
+    "button": "Mint",
+    "info": "Watching for deposits... ",
+    "deposit_help_text_1": "Deposit at least 0 BTC to",
+    "deposit_help_text_2": "Address: "
+  },
+  "burn": {
+    "recipient_address_hint": "Recipient (testnet Bitcoin address)",
+    "amount_hint": "Amount",
+    "button": "Burn"
+  }
+}

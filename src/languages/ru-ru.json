@@ -1,0 +1,17 @@
+{
+  "connect_wallet": "Подключить кошелек",
+  "tab1": "Добыть",
+  "tab2": "Сжечь",
+  "mint": {
+    "recipient_address_hint": "Введите адрес получателя (свой)",
+    "button": "Получить renBTC",
+    "info": "В ожидании testnet BTC",
+    "deposit_help_text_1": "Отправьте как минимум 0 TBTC на",
+    "deposit_help_text_2": "Адрес: "
+  },
+  "burn": {
+    "recipient_address_hint":"Введите получателя (адрес в тестовой сети биткоин)",
+    "amount_hint": "Введите количество renBTC",
+    "button": "Получить TBTC"
+  }
+}
