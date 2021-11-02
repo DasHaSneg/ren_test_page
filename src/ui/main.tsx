@@ -30,7 +30,7 @@ const MainTabs = () => {
 
 	return (
 		<>
-			<Tabs value={tab} onChange={handleChangeTab} centered>
+			<Tabs value={tab} onChange={handleChangeTab} variant="fullWidth">
 				<Tab label={strings('tab1')} />
 				<Tab label={strings('tab2')} />
 			</Tabs>
@@ -75,16 +75,10 @@ const Main = () => {
 		<ThemeProvider theme={theme}>
 			<Container maxWidth="lg">
 				<header className="header">
-					<Paper square variant="outlined">
-						<AppBar position="static" color="inherit">
-							<Toolbar>
-								<LanguageButtons handleChange={handleChangeLanguage} language={language} />
-								<Button variant="outlined" color="primary">
-									{strings('connect_wallet')}
-								</Button>
-							</Toolbar>
-						</AppBar>
-					</Paper>
+					<LanguageButtons handleChange={handleChangeLanguage} language={language} />
+					<Button variant="outlined" color="primary">
+						{strings('connect_wallet')}
+					</Button>
 				</header>
 				<main className="main">
 					<div className="content_wrapper">

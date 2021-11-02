@@ -18,7 +18,9 @@ const theme: Theme = createTheme({
 	components: {
 		MuiPaper: {
 			styleOverrides: {
-				root: {},
+				root: {
+					borderRadius: 12,
+				},
 			},
 		},
 	},

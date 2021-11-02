@@ -4,6 +4,7 @@
   "tab2": "Burn",
   "mint": {
     "recipient_address_hint": "Recipient (testnet Ethereum address)",
+    "recipient_address_error": "Invalid address",
     "button": "Mint",
     "info": "Watching for deposits... ",
     "deposit_help_text_1": "Deposit at least 0 BTC to",
@@ -12,6 +13,8 @@
   "burn": {
     "recipient_address_hint": "Recipient (testnet Bitcoin address)",
     "amount_hint": "Amount",
+    "amount_error": "Invalid amount",
     "button": "Burn"
-  }
+  },
+  "address_error": "Invalid address"
 }

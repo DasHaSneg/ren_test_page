@@ -1,17 +1,18 @@
 import * as React from 'react';
-import { Button } from '@mui/material';
-import { StyledInput } from './styles/fields';
 import { strings } from '../i18n';
+import { Chain, Chains } from '../ren/chains';
+import { AddressField, AmountField } from './fields';
+import StyledSubmitButton from './styles/styledButtons';
 
 const BurnForm = () => {
 	return (
 		<div className="panel">
-			<StyledInput placeholder={strings('burn.recipient_address_hint')} />
-			<StyledInput placeholder={strings('burn.amount_hint')} />
+			<AddressField chain={Chains.get(Chain.Bitcoin)} />
+			<AmountField />
 			<div className="button_wrapper">
-				<Button variant="contained" fullWidth>
+				<StyledSubmitButton variant="contained" fullWidth>
 					{strings('burn.button')}
-				</Button>
+				</StyledSubmitButton>
 			</div>
 		</div>
 	);

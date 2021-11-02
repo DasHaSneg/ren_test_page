@@ -12,6 +12,8 @@
   "burn": {
     "recipient_address_hint":"Введите получателя (адрес в тестовой сети биткоин)",
     "amount_hint": "Введите количество renBTC",
+    "amount_error": "Неправильное количество",
     "button": "Получить TBTC"
-  }
+  },
+  "address_error": "Неправильный адрес"
 }

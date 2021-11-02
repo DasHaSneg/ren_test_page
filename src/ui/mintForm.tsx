@@ -1,17 +1,17 @@
 import * as React from 'react';
-import { Button, TextField } from '@mui/material';
+import { Chain, Chains } from '../ren/chains';
 import { strings } from '../i18n';
+import { AddressField } from './fields';
+import StyledSubmitButton from './styles/styledButtons';
 
 const MintForm = () => {
 	return (
 		<div className="panel">
-			<div className="input_wrapper">
-				<TextField id="outlined-basic" label="Outlined" variant="outlined" placeholder={strings('mint.recipient_address_hint')} />
-			</div>
+			<AddressField chain={Chains.get(Chain.Ethereum)} />
 			<div className="button_wrapper">
-				<Button variant="contained" fullWidth>
+				<StyledSubmitButton variant="contained" fullWidth>
 					{strings('mint.button')}
-				</Button>
+				</StyledSubmitButton>
 			</div>
 		</div>
 	);
